@@ -1,0 +1,33 @@
+body {
+  margin: 0 auto;
+}
+.bg {
+  width: 1920px;
+  height: 1000px;
+  margin: 0 auto;
+  display: block;
+}
+.title {
+  width: 450px;
+  height: 141px;
+  margin: 0 auto;
+  display: block;
+  align-items: center;
+}
+.slaider {
+  width: 1116px;
+  height: 610px;
+  margin: 0 auto;
+  display: block;
+  align-items: center;
+  display: flex;
+  .svgPrev,
+  .svgNext {
+    text-align: center;
+  }
+  .navBar {
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+  }
+}
