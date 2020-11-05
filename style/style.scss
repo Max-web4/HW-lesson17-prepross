@@ -25,9 +25,17 @@ body {
   .svgNext {
     text-align: center;
   }
+  .article {
+    justify-content: center;
+  }
   .navBar {
     display: flex;
     list-style-type: none;
     flex-direction: row;
+    nav {
+      display: flex;
+      list-style-type: none;
+      flex-direction: row;
+    }
   }
 }
