@@ -11,8 +11,57 @@ body {
   width: 450px;
   height: 141px;
   margin: 0 auto;
-  display: block;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  padding: 15px;
+  .topsign {
+    width: 314px;
+    height: 14px;
+    color: #898f8f;
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 15px;
+  }
+
+  .ourTeam {
+    width: 320px;
+    height: 45px;
+    color: #ffcc00;
+    font-family: "Roboto - Black";
+    font-size: 60px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 66px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 15px;
+  }
+  .logo {
+    padding-top: 20px;
+    display: flex;
+    object {
+      width: 20px;
+      z-index: -1;
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+    hr {
+      width: 410px;
+      height: 2px;
+      background-color: #ffcc00;
+      justify-content: center;
+      border: 0px;
+      z-index: 1;
+    }
+  }
 }
 .slaider {
   width: 1116px;
@@ -23,19 +72,96 @@ body {
   display: flex;
   .svgPrev,
   .svgNext {
+    width: 30x;
+    height: 30px;
+    color: #ffcc00;
+    margin: 20px;
+    font-size: 40px;
+    font-weight: 400;
+
+    line-height: 24px;
     text-align: center;
   }
-  .article {
-    justify-content: center;
+}
+.article {
+  width: 416px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  .name {
+    width: 241px;
+    height: 28px;
+    color: #666666;
+    font-family: "Roboto - Black";
+    font-size: 36px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 24px;
+    text-align: center;
   }
+  .ocupation {
+    width: 220px;
+    height: auto;
+    color: #666666;
+    font-family: Raleway;
+    font-size: 24px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 36px;
+    text-align: center;
+    margin-top: 40px;
+  }
+
   .navBar {
     display: flex;
     list-style-type: none;
     flex-direction: row;
+    margin-top: 15px;
+    height: auto;
     nav {
       display: flex;
       list-style-type: none;
       flex-direction: row;
     }
   }
+  .discription {
+    width: 416px;
+    height: auto;
+    color: #333333;
+    font-family: Raleway;
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 24px;
+    text-align: center;
+    margin-top: 40px;
+  }
+  .someLines {
+    margin-top: 50px;
+  }
+  .button {
+    margin-top: 15px;
+    width: 120px;
+    height: 24px;
+    border: 1px solid orange;
+  }
+}
+
+.verticalLine {
+  hr {
+    border: 0px;
+    background-color: orange;
+  }
+  margin-left: 41px;
+  margin-right: 41px;
+}
+
+.picture {
+  width: 412px;
+  height: 412px;
 }
