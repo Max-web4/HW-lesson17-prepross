@@ -114,6 +114,14 @@ body {
     line-height: 36px;
     text-align: center;
     margin-top: 40px;
+
+    hr {
+      width: 200px;
+      height: 1px;
+      background-color: #ffcc00;
+      border: none;
+      outline: none;
+    }
   }
 
   .navBar {
@@ -128,40 +136,78 @@ body {
       flex-direction: row;
     }
   }
-  .discription {
-    width: 416px;
-    height: auto;
-    color: #333333;
-    font-family: Raleway;
-    font-size: 14px;
-    font-weight: 500;
-    font-style: normal;
-    letter-spacing: normal;
-    line-height: 24px;
-    text-align: center;
-    margin-top: 40px;
-  }
-  .someLines {
-    margin-top: 50px;
-  }
-  .button {
-    margin-top: 15px;
-    width: 120px;
-    height: 24px;
-    border: 1px solid orange;
-  }
+}
+.discription {
+  width: 416px;
+  height: auto;
+  color: #333333;
+  font-family: Raleway;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 24px;
+  text-align: center;
+  margin-top: 40px;
+}
+.someLines {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  width: 50px;
+  height: 4px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 179, 0, 1) 0%,
+    rgba(255, 179, 0, 1) 15%,
+    rgba(255, 255, 255, 1) 15%,
+    rgba(255, 255, 255, 1) 25%,
+    rgba(255, 179, 0, 1) 25%,
+    rgba(255, 179, 0, 1) 75%,
+    rgba(255, 255, 255, 1) 75%,
+    rgba(255, 255, 255, 1) 85%,
+    rgba(255, 179, 0, 1) 85%,
+    rgba(255, 179, 0, 1) 100%
+  );
+}
+
+.button {
+  margin-top: 15px;
+  width: 120px;
+  height: 30px;
+  border: 1px solid orange;
+  background-color: rgb(255, 255, 255);
+  line-height: 30px;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  color: #898f8f;
 }
 
 .verticalLine {
+  width: 100px;
   hr {
     border: 0px;
     background-color: orange;
   }
   margin-left: 41px;
   margin-right: 41px;
+  text-align: center;
 }
 
 .picture {
   width: 412px;
   height: 412px;
+}
+
+li {
+  width: 30px;
+  height: 30px;
+  border: 1px solid gray;
+  border-radius: 50%;
+  margin-left: 5px;
+  text-align: center;
+  line-height: 30px;
+  color: #898f8f;
 }

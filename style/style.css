@@ -151,6 +151,14 @@ body {
   margin-top: 40px;
 }
 
+.article .ocupation hr {
+  width: 200px;
+  height: 1px;
+  background-color: #ffcc00;
+  border: none;
+  outline: none;
+}
+
 .article .navBar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -175,7 +183,7 @@ body {
           flex-direction: row;
 }
 
-.article .discription {
+.discription {
   width: 416px;
   height: auto;
   color: #333333;
@@ -189,17 +197,35 @@ body {
   margin-top: 40px;
 }
 
-.article .someLines {
+.someLines {
   margin-top: 50px;
+  margin-bottom: 30px;
+  width: 50px;
+  height: 4px;
+  background: -webkit-gradient(linear, left top, right top, from(white), color-stop(0%, #ffb300), color-stop(15%, #ffb300), color-stop(15%, white), color-stop(25%, white), color-stop(25%, #ffb300), color-stop(75%, #ffb300), color-stop(75%, white), color-stop(85%, white), color-stop(85%, #ffb300), to(#ffb300));
+  background: linear-gradient(90deg, white 0%, #ffb300 0%, #ffb300 15%, white 15%, white 25%, #ffb300 25%, #ffb300 75%, white 75%, white 85%, #ffb300 85%, #ffb300 100%);
 }
 
-.article .button {
+.button {
   margin-top: 15px;
+  width: 120px;
+  height: 30px;
+  border: 1px solid orange;
+  background-color: white;
+  line-height: 30px;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #898f8f;
 }
 
 .verticalLine {
+  width: 100px;
   margin-left: 41px;
   margin-right: 41px;
+  text-align: center;
 }
 
 .verticalLine hr {
@@ -210,5 +236,16 @@ body {
 .picture {
   width: 412px;
   height: 412px;
+}
+
+li {
+  width: 30px;
+  height: 30px;
+  border: 1px solid gray;
+  border-radius: 50%;
+  margin-left: 5px;
+  text-align: center;
+  line-height: 30px;
+  color: #898f8f;
 }
 /*# sourceMappingURL=style.css.map */
