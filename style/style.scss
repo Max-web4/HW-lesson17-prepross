@@ -64,7 +64,7 @@ body {
   }
 }
 .slaider {
-  width: 1116px;
+  width: 1300px;
   height: 610px;
   margin: 0 auto;
   display: block;
@@ -90,6 +90,7 @@ body {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  margin-left: 200px;
   .name {
     width: 241px;
     height: 28px;
@@ -191,14 +192,56 @@ a {
     border: 0px;
     background-color: orange;
   }
-  margin-left: 41px;
-  margin-right: 41px;
+  position: relative;
+  left: 100px;
+
   text-align: center;
 }
 
-.picture {
-  width: 412px;
-  height: 412px;
+.ramka {
+  width: 420px;
+  height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-image: linear-gradient(
+      orange 0,
+      orange 100px,
+      transparent 100px,
+      transparent 320px,
+      orange 320px,
+      orange 420px
+    ),
+    linear-gradient(
+      90deg,
+      orange 0,
+      orange 100px,
+      transparent 100px,
+      transparent 320px,
+      orange 320px,
+      orange 420px
+    ),
+    linear-gradient(
+      orange 0,
+      orange 100px,
+      transparent 100px,
+      transparent 320px,
+      orange 320px,
+      orange 420px
+    ),
+    linear-gradient(
+      90deg,
+      orange 0px,
+      orange 100px,
+      transparent 100px,
+      transparent 320px,
+      orange 320px,
+      orange 420px
+    );
+  background-size: 1px 420px, 420px 1px, 1px 420px, 420px 1px;
+  background-position: 0 0, 0 0, 100% 100%, 100% 100%;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
 }
 
 li {
@@ -210,4 +253,31 @@ li {
   text-align: center;
   line-height: 30px;
   color: #898f8f;
+}
+.radioButton {
+  display: none;
+}
+.fake {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: 1px solid orange;
+  border-radius: 50%;
+  position: relative;
+}
+.fake::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  display: block;
+  width: 12px;
+  height: 12px;
+  border: 1px solid orange;
+  border-radius: 50%;
+  opacity: 0;
+  background-color: orange;
+}
+.radioButton:checked + .fake::before {
+  opacity: 1;
 }
